@@ -2,7 +2,7 @@ package org.example;
 
 import java.util.Objects;
 
-public class Circle extends Shape implements Comparable<Shape>{
+public class Circle extends Shape {
     private double radius;
 
     public Circle(double radius) {
@@ -25,11 +25,6 @@ public class Circle extends Shape implements Comparable<Shape>{
     @Override
     public double getPerimeter() {
         return 2 * Math.PI * radius;
-    }
-
-    @Override
-    public int compareTo(Shape o) {
-        return Double.compare(this.getArea(), o.getArea());
     }
 
     @Override

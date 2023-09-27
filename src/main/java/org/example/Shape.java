@@ -11,4 +11,9 @@ abstract public class Shape implements Comparable<Shape>{
     public static Rectangle rectangle(double base, double height) {
         return new Rectangle(base, height);
     }
+
+    public int compareTo(Shape o) {
+        return Double.compare(this.getArea(), o.getArea());
+    }
+
 }
